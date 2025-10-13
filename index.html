@@ -1,94 +1,115 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adote um Herói</title>
+    <link rel="stylesheet" href="style/styles.css" />
+  </head>
+  <body>
+    <!-- 🌸 Navbar -->
+    <nav>
+      <div class="logo">🐾 Adote um Herói</div>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-      <link rel="stylesheet" href="style/index.css">
-    
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"   rel="stylesheet">
-
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans:wght@300;400;600&family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-    <title>Adote um Heroi</title>
-
-</head>
-
-<body>
-
-    <header>
-        <nav id="nav-01">
-            <div id="logo">
-                <img src="./imagens/logo.jpg.png" alt="logo">
-            </div>
-
-            <ul id="menu-pricipal">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="projeto.html">Projeto</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-
-            </ul>
-        </nav>
-        <div class="introdução">
-            <h1>Adote um Heroi</h1>
-            <h2>Transforme uma vida. Adote um herói.</h2>
-            <a href="#" target="_blank">QUERO ADOTAR AGORA</a>
+    <!-- 💜 Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Adote um Herói</h1>
+        <p class="tagline">
+          Transforme a vida de um animal e ganhe um amigo fiel, meu amor 🐶💜
+        </p>
+        <div class="cta">
+          <a href="cadastro.html" class="btn primary">Quero Ajudar</a>
+          <a href="projetos.html" class="btn">Conhecer Projetos</a>
         </div>
-    </header>
+      </div>
+    </section>
 
+    <!-- 🐾 Quem Somos -->
+    <section class="about-section">
+      <div class="about-container">
+        <h2>Quem Somos</h2>
+         <p>Somos uma ONG dedicada ao resgate, cuidado e adoção de animais em situação de vulnerabilidade. Nosso objetivo é oferecer uma nova chance para os peludinhos encontrarem um lar cheio de amor e carinho, meu amor 💜
+        <br>
+      Acreditamos que cada animal é um herói, lutando todos os dias por afeto, cuidado e uma segunda oportunidade.
+         </p>
+        <ul>
+         <li>🐕 Resgate de animais abandonados</li>
+         <li>🍖 Campanhas de alimentação solidária</li>
+         <li>🏡 Feiras de adoção responsável</li>
+        </ul>
+      </div>
+    </section>
 
-    <main>
-        <section class="cards-container">
+    <!-- 🐶 Animais para Adoção -->
+    <section class="container">
+      <h2>Animais para Adoção</h2>
+      <div class="cards-grid">
+        <!-- Card 1 -->
         <div class="card">
-          <span class="material-icons icon">home</span>
-            <h3>Adote um Pet pro seu Lar</h3>
-            <p>Adotar é transformar uma vida com amor, carinho e um novo começo.</p>
+          <img src="https://images.unsplash.com/photo-1619983081563-430f63602796?w=800&q=80&auto=format&fit=crop" alt="Cachorro caramelo" />
+          <div class="card-body">
+            <h3>Thor</h3>
+            <p>
+              Um caramelo cheio de energia e amor pra dar. Adora brincar e está
+              pronto para encontrar um lar feliz, meu amor 🐾
+            </p>
+            <a href="cadastro.html" class="btn primary">Quero Adotar</a>
+          </div>
         </div>
 
+        <!-- Card 2 -->
         <div class="card">
-          <span class="material-icons icon">campaign</span>
-            <h3>Divulgue seu pet para adoção</h3>
-            <p>Divulgue para milhares de pessoas na sua região.</p>
+          <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=800&q=80&auto=format&fit=crop" alt="Gato branco e cinza" />
+          <div class="card-body">
+            <h3>Luna</h3>
+            <p>
+              Meiga e carinhosa, Luna é uma gatinha calma que ama um colinho e
+              longas sonecas no sol 🌞💜
+            </p>
+            <a href="cadastro.html" class="btn primary">Quero Adotar</a>
+          </div>
         </div>
 
+        <!-- Card 3 -->
         <div class="card">
-          <span class="material-icons icon">settings</span>
-            <h3>Seja um Herói dos Pets!</h3>
-            <p>Doe um pouco do seu tempo e muito do seu amor.
-Como voluntário, você ajuda a transformar vidas, levando carinho, cuidado e esperança para animais que só precisam de uma segunda chance.</p>
+          <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=800&q=80&auto=format&fit=crop" alt="Cachorrinho preto" />
+          <div class="card-body">
+            <h3>Max</h3>
+            <p>
+              Pequeno no tamanho, mas gigante no coração. Max adora correr e
+              brincar com outros pets 🐕✨
+            </p>
+            <a href="cadastro.html" class="btn primary">Quero Adotar</a>
+          </div>
         </div>
 
+        <!-- Card 4 -->
         <div class="card">
-          <span class="material-icons icon">security</span>
-            <h3>Segurança e privacidade</h3>
-            <p>Suas informações estão seguras conosco.</p>
+          <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=800&q=80&auto=format&fit=crop" alt="Gato preto e branco" />
+          <div class="card-body">
+            <h3>Mia</h3>
+            <p>
+              Curiosa e divertida, Mia é uma companheira fiel que vai encher
+              sua casa de alegria e ronronados 😺💖
+            </p>
+            <a href="cadastro.html" class="btn primary">Quero Adotar</a>
+          </div>
         </div>
-     </section>
+      </div>
+    </section>
 
-    </main>
-    <footer></footer>
-
-    <script src="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js" integrity="sha512-O5YCLUxCY2OBc4rfpnKUIgE4LGuCiW8CrJ7ty4hvkBAAKUOnlbomEFWd3a6ruRnFvO3LG2wiaGiJ1heOvdppvA==" crossorigin="anonymous"></script>
-
-    <script src="./script/script.js"></script>
-
-
-</body>
+    <!-- 💌 Rodapé -->
+    <footer class="site-footer">
+      <p>© Adote um Herói — Todos os direitos reservados</p>
+      <p>E-mail: <a href="mailto:yato-crtl@gmail.com" style="color:var(--roxo);">yato-crtl@gmail.com</a></p>
+      <p>Telefone: <a href="tel:+5583988888888" style="color:var(--roxo);">(83) 98888-8888</a></p>
+    </footer>
+  </body>
 </html>

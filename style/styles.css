@@ -1,0 +1,314 @@
+/* ==================================================
+   🌈 ESTILO GLOBAL
+================================================== */
+:root {
+  --roxo: #8730c8;
+  --roxo-escuro: #5a3296;
+  --vermelho-suave: #c85064;
+  --branco: #fff;
+  --cinza: #f0f0f0;
+  --texto: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--roxo-escuro), var(--vermelho-suave));
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* ==========================
+   🧭 Navbar
+========================== */
+nav {
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--branco);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--branco);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd1ff;
+}
+
+/* ==========================
+   ✨ Botões
+========================== */
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: var(--roxo);
+  color: var(--branco);
+  border: none;
+}
+
+.btn.primary:hover {
+  background: var(--roxo-escuro);
+  transform: scale(1.05);
+}
+
+/* ==========================
+   💌 Footer
+========================== */
+.site-footer {
+  background: rgba(0,0,0,0.6);
+  color: var(--branco);
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
+
+.site-footer p {
+  margin: 0.3rem 0;
+}
+
+/* ==========================
+   🏠 Hero - Index
+========================== */
+.hero {
+  height: 70vh;
+  background: linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("https://images.unsplash.com/photo-1517849845537-4d257902454a?w=1600&q=80&auto=format&fit=crop")
+      no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+  color: var(--branco);
+}
+
+.hero-inner h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-inner p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+/* ==========================
+   🌟 Quem Somos
+========================== */
+.about-section {
+  background: linear-gradient(135deg, rgba(135,80,200,0.8), rgba(200,80,100,0.7));
+  padding: 4rem 2rem;
+  border-radius: 16px;
+  margin: 2rem auto;
+  max-width: 900px;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.about-section ul li {
+  background: rgba(255,255,255,0.1);
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  width: fit-content;
+  transition: 0.3s;
+}
+
+.about-section ul li:hover {
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.05);
+}
+
+/* ==========================
+   🐾 Cards de Adoção
+========================== */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-body h3 {
+  color: var(--roxo-escuro);
+  margin-bottom: 0.5rem;
+}
+
+.card-body p {
+  color: var(--texto);
+}
+
+/* ==========================
+   📋 Formulário - Cadastro
+========================== */
+form {
+  background: rgba(255, 255, 255, 0);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  max-width: 700px;
+  margin: 2rem auto;
+  color: var(--branco);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid rgb(10, 10, 10);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: rgba(0, 0, 0, 0.589);
+  color: var(--branco);
+  transition: 0.2s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--roxo);
+  outline: none;
+  box-shadow: 0 0 8px rgba(135, 80, 200, 0.5);
+}
+
+form button {
+  background: var(--roxo);
+  color: var(--branco);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: var(--roxo-escuro);
+  transform: scale(1.03);
+}
+
+/* ==========================
+   🐶 Projetos
+========================== */
+.project-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.project {
+  background: rgba(255,255,255,0.08);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  width: 300px;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project p {
+  color: var(--texto);
+  font-size: 0.95rem;
+}
+
+
