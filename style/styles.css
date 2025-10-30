@@ -60,6 +60,47 @@ nav ul li a:hover {
   color: #ffd1ff;
 }
 
+
+/* Botão hambúrguer */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem 2rem;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: var(--roxo-escuro);
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 1rem 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
 /*---------- ✨ Botões --------- */
 
 .btn {
@@ -302,5 +343,12 @@ form button:hover {
   color: var(--texto);
   font-size: 0.95rem;
 }
+
+
+
+
+
+
+
 
 
