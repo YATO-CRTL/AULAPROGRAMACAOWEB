@@ -163,6 +163,7 @@ const templates = {
 // Função para renderizar página
 function carregarPagina(pagina) {
   app.innerHTML = templates[pagina] || "<h2>Página não encontrada</h2>";
+  window.scrollTo(0, 0);
 
   // Adicionar listeners nos links internos do template
   app.querySelectorAll("[data-page]").forEach(el => {
